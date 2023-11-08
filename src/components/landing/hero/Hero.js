@@ -14,7 +14,7 @@ class Hero extends Component
 					<div className = 'row align-items-center'>
 						<div className = 'c col-lg-6 col-12'>
 							<div className = 'left-side mb-lg-0 mb-5 text-lg-start text-center'>
-								<h3 className = 'title text-capitalize'>welcome to <span>Supnits Classes</span> !</h3>
+								<h3 className = 'title text-capitalize'>welcome to <span>Supnits Classes</span></h3>
 								<p className = 'sub-title text-muted text-capitalize'>we always would be nascent</p>
 								<p className = 'desc pb-3'>
 									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat

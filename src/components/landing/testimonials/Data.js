@@ -2,17 +2,17 @@
 let tes = [
 	{
 		img: require('../../../images/tes/1.jpg'),
-		name: 'alfredo traviski',
-		skill: 'UI/UX Designer'
+		name: 'Student 1',
+		skill: 'Qualification'
 	},
 	{
 		img: require('../../../images/tes/2.jpg'),
-		name: 'André gohan',
+		name: 'Student 2',
 		skill: 'Full Stack Developer'
 	},
 	{
 		img: require('../../../images/tes/3.jpg'),
-		name: 'gilberto Mariano',
+		name: 'Student 3',
 		skill: 'Ex Student'
 	}
 ]

@@ -2,23 +2,23 @@
 let categories = [
 	{
 		img: require('../../../images/categories/c1.svg'),
-		name: 'web development'
+		name: 'physics'
 	},
 	{
 		img: require('../../../images/categories/c2.svg'),
-		name: 'cybersecurity'
+		name: 'chemistry'
 	},
 	{
 		img: require('../../../images/categories/c3.svg'),
-		name: 'design'
+		name: 'biology'
 	},
 	{
 		img: require('../../../images/categories/c4.svg'),
-		name: 'data analysis'
+		name: 'maths'
 	},
 	{
 		img: require('../../../images/categories/c5.svg'),
-		name: 'SEO'
+		name: 'english'
 	}
 ]
 
