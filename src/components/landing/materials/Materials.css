@@ -7,14 +7,14 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .materials .container .title .sub-title {
   font-size: 30px;
   font-weight: 800; }
   .materials .container .title .sub-title span {
-    color: #e91e63; }
+    color: #008080; }
 .materials .container .row .c .i img {
   width: 100px;
   height: 110px;

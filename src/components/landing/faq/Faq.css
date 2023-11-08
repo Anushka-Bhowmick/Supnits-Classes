@@ -7,14 +7,14 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .faq .container .title .sub-title {
   font-size: 30px;
   font-weight: 800; }
   .faq .container .title .sub-title span {
-    color: #e91e63; }
+    color: #008080; }
 .faq .container .accordion .accordion-item .accordion-button {
   font-weight: bolder;
   color: black;

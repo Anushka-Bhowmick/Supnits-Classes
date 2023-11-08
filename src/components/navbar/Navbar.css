@@ -7,7 +7,7 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .navbar {
@@ -19,7 +19,7 @@
     font-size: 20px;
     color: black; }
     .navbar .container .navbar-brand span {
-      color: #e91e63; }
+      color: #008080; }
     .navbar .container .navbar-brand i {
       transition: 0.5s; }
     .navbar .container .navbar-brand:hover i {
@@ -34,7 +34,7 @@
   height: 2px;
   width: 100%;
   position: absolute;
-  background-color: #e91e63;
+  background-color: #008080;
   transition: all ease 0.3s;
   left: 0; }
 

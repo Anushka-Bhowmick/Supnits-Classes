@@ -7,14 +7,14 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .stats .container .title .sub-title {
   font-size: 30px;
   font-weight: 800; }
   .stats .container .title .sub-title span {
-    color: #e91e63; }
+    color: #008080; }
 .stats .container ._box .stat {
   width: 300px; }
   .stats .container ._box .stat .title {
@@ -22,6 +22,6 @@
   .stats .container ._box .stat .num {
     font-size: 30px;
     font-weight: 800;
-    color: #e91e63; }
+    color: #008080; }
 
 /*# sourceMappingURL=Stats.css.map */

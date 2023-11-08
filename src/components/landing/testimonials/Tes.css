@@ -7,31 +7,31 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .tes .container .title .sub-title {
   font-size: 30px;
   font-weight: 800; }
   .tes .container .title .sub-title span {
-    color: #e91e63; }
+    color: #008080; }
 .tes .container .box .item {
   width: 300px; }
   .tes .container .box .item .p-profile .pic {
     width: 150px;
     height: 150px;
     border: 3px solid grey; }
-  .tes .container .box .item .user-info .name, .tes .container .box .item .user-info .skill {
+  .tes .container .box .item .user-primary .name, .tes .container .box .item .user-primary .skill {
     font-weight: bolder; }
-  .tes .container .box .item .user-info .testimonial {
+  .tes .container .box .item .user-primary .testimonial {
     font-size: 17px; }
-    .tes .container .box .item .user-info .testimonial span {
-      color: #e91e63; }
+    .tes .container .box .item .user-primary .testimonial span {
+      color: #008080; }
   .tes .container .box .item .accounts {
     font-size: 20px; }
     .tes .container .box .item .accounts a {
       transition: all 0.3s;
-      color: #e91e63; }
+      color: #008080; }
       .tes .container .box .item .accounts a:hover {
         color: grey; }
 

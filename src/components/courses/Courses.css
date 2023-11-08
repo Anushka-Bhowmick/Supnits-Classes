@@ -7,13 +7,13 @@
     opacity: 0.3; } }
 @keyframes coloring {
   0%, 100% {
-    color: #e91e63; }
+    color: #008080; }
   50% {
     color: grey; } }
 .title .sub-title {
   font-size: 30px;
   font-weight: 800; }
   .title .sub-title span {
-    color: #e91e63; }
+    color: #008080; }
 
 /*# sourceMappingURL=Courses.css.map */
