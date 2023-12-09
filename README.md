@@ -67,7 +67,12 @@ If you encounter any issues or bugs, please open an issue on the repository. Pro
 
 ## Community and Communication
 
-Join our community and communicate with other contributors and maintainers. We appreciate open and respectful communication.
+Follow these points during your contribution. We appreciate open and respectful communication.
+- Always open an issue before contributing to the repository.
+- Get yourself assigned before starting to work on an issue. Check if someone is already assigned for it.
+- If there is inactivity from your side for quite some time, someone else will be given the chance.
+- Be respectful towards the community.
+- Mention the issue number on your PR.
 
 
-Thank you for contributing to Supnits-Classes! <3
+Thank you for contributing to Supnits-Classes! ❤️
