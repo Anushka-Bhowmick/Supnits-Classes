@@ -1,0 +1,27 @@
+/* CarouselComponent.css */
+
+.carousel-image {
+    max-width: 100%;
+    height: 500px; /* Adjust the height based on your design */   
+    object-fit: cover;
+    /* Ensure images maintain their aspect ratio */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Semi-transparent black background for caption */
+    color: #fff;
+    /* White text for caption */
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .carousel-image {
+        height: 250px;
+        /* Adjust the height for smaller screens */
+    }
+}
