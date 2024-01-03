@@ -104,3 +104,33 @@
 		bottom: 0 ;
 	}
 }
+
+	@media (max-width: 992px) {
+		.hover {
+		  &:before,
+		  &:after {
+			display: none; /* Hide the horizontal lines */
+		  }
+		  &:after {
+			/* Optionally, add a bottom border for mobile screens */
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: $color; 
+			transition: all ease 0.3s;
+			opacity: 0; 
+		  }
+		  &:hover:before {
+			opacity: 1; 
+		  }
+		}
+	  }
+	  
+	.navbar-nav{
+		width: max-content;
+	}
+	

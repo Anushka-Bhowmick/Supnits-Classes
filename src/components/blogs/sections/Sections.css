@@ -1,21 +1,28 @@
 @keyframes translation {
   0%, 100% {
     transform: translateX(0);
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
     transform: translateX(10px);
-    opacity: 0.3; } }
+    opacity: 0.3;
+  }
+}
 @keyframes coloring {
   0%, 100% {
-    color: #008080; }
+    color: #008080;
+  }
   50% {
-    color: grey; } }
+    color: grey;
+  }
+}
 .sections .container ._s .c .card {
-  transition: all ease 0.3s; }
-  .sections .container ._s .c .card:hover {
-    transform: scale(1.03); }
-  .sections .container ._s .c .card .card-body .card-title {
-    font-weight: 800;
-    font-size: 20px; }
-
-/*# sourceMappingURL=Sections.css.map */
+  transition: all ease 0.3s;
+}
+.sections .container ._s .c .card:hover {
+  transform: scale(1.03);
+}
+.sections .container ._s .c .card .card-body .card-title {
+  font-weight: 800;
+  font-size: 20px;
+}/*# sourceMappingURL=Sections.css.map */
