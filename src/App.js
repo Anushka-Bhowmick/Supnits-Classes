@@ -35,6 +35,7 @@ class App extends Component
           <BrowserRouter>
             <>
               <Sb />
+             <CarouselComponent images={carouselImages} /> {/* Add CarouselComponent here */}
               <div className = '_navbar'>
                   <Navbar />
               </div>
