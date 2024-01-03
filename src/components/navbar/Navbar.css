@@ -41,7 +41,7 @@
   transition: 0.3s;
 }
 
-.hover:before, .hover:after, .active:before, .active:after {
+.hover:after {
   content: "";
   height: 2px;
   width: 100%;
@@ -79,12 +79,19 @@
   bottom: 0;
 }
 
-@media (max-width: 992px) and (max-width: 992px) {
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #008080;
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: #008080;
+}
+
+@media (max-width: 992px) {
   .hover:before, .hover:after {
-    display: none; /* Hide the horizontal lines */
+    display: none;
   }
   .hover:after {
-    /* Optionally, add a bottom border for mobile screens */
     content: "";
     display: block;
     width: 100%;
@@ -92,17 +99,25 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #008080; /* Set your desired color */
+    background-color: #008080;
     transition: all ease 0.3s;
-    opacity: 0; /* Initially hide the bottom border */
+    opacity: 0;
   }
   .hover:hover:before {
-    opacity: 1; /* Show the bottom border on hover */
+    opacity: 1;
   }
-}
-@media (max-width: 992px) {
   .navbar-nav {
     width: -moz-max-content;
     width: max-content;
+  }
+  .navbar .navbar-nav .nav-item .nav-link.active::before,
+  .navbar .navbar-nav .nav-item .nav-link.active::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: #008080;
+    transition: all ease 0.3s;
+    opacity: 1;
   }
 }/*# sourceMappingURL=Navbar.css.map */
