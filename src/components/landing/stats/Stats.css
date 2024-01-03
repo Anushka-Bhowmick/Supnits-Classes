@@ -1,27 +1,36 @@
 @keyframes translation {
   0%, 100% {
     transform: translateX(0);
-    opacity: 1; }
+    opacity: 1;
+  }
   50% {
     transform: translateX(10px);
-    opacity: 0.3; } }
+    opacity: 0.3;
+  }
+}
 @keyframes coloring {
   0%, 100% {
-    color: #008080; }
+    color: #008080;
+  }
   50% {
-    color: grey; } }
+    color: grey;
+  }
+}
 .stats .container .title .sub-title {
   font-size: 30px;
-  font-weight: 800; }
-  .stats .container .title .sub-title span {
-    color: #008080; }
+  font-weight: 800;
+}
+.stats .container .title .sub-title span {
+  color: #008080;
+}
 .stats .container ._box .stat {
-  width: 300px; }
-  .stats .container ._box .stat .title {
-    font-weight: bold; }
-  .stats .container ._box .stat .num {
-    font-size: 30px;
-    font-weight: 800;
-    color: #008080; }
-
-/*# sourceMappingURL=Stats.css.map */
+  width: 300px;
+}
+.stats .container ._box .stat .title {
+  font-weight: bold;
+}
+.stats .container ._box .stat .num {
+  font-size: 30px;
+  font-weight: 800;
+  color: #008080;
+}/*# sourceMappingURL=Stats.css.map */
