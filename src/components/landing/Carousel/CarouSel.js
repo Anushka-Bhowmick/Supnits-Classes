@@ -38,6 +38,19 @@ function CarouSel() {
                     </p>
                 </Carousel.Caption>
             </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100 " style={{ height: "60vh" }}
+                    src="http://localhost:3000/static/media/c1.608155f70cea40574a0f914a16de3bc8.svg"
+                    alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h5>Fourth slide label</h5>
+                    <p>
+                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                    </p>
+                </Carousel.Caption>
+            </Carousel.Item>
         </Carousel>
     );
 }
