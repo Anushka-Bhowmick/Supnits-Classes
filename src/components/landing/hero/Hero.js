@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import "./Hero.css";
 import hero from "../../../images/sections/hero.svg";
 
+
+
 class Hero extends Component {
   render() {
     return (
@@ -22,6 +24,7 @@ class Hero extends Component {
                   we redefine learning as a family. Our unparalleled courses
                   cater to all ICSE and CBSE students,JEE and NEET aspirants
                 </p>
+
                 <div className="buttons">
                   <Link
                     className="btn btn-primary text-capitalize me-3 shadow"
