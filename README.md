@@ -2,6 +2,10 @@
 
 Welcome to the Supnits-Classes repository! We appreciate your interest in contributing to our educational institute's website. Whether you're a developer, designer, or content creator, your contributions are valuable in enhancing the overall quality of our platform.
 
+<p align="center">
+  <img src="https://github.com/Anushka-Bhowmick/Supnits-Classes/assets/121785700/11214b55-7828-44bf-8fe4-f2a714aab095" alt="Supnits-Classes Image">
+</p>
+
 ## Table of Contents
 - [Getting Started](#getting-started)
   - [Fork the Repository](#fork-the-repository)

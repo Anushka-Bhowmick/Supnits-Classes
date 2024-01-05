@@ -25,6 +25,7 @@
 				i
 				{
 					transform: rotate(360deg);
+					
 				}
 			}
 		}
@@ -36,7 +37,7 @@
 				{
 					a
 					{
-						color: black ;
+						color: black;
 						font-weight: bolder;
 						transition: 0.3s ;
 					}
@@ -46,9 +47,10 @@
 	}
 }
 
-.hover, .active
+
+.hover
 {
-	&:before, &:after
+	 &:after
 	{
 		content: '' ;
 		height: 2px ;
@@ -58,13 +60,16 @@
 		transition: all ease 0.3s ;
 		left: 0 ;
 	}
+	
 }
 
 .hover
 {
+
 	&:before, &:after
 	{
 		opacity: 0 ;
+		
 	}
 	&:before
 	{
@@ -104,3 +109,60 @@
 		bottom: 0 ;
 	}
 }
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: $color;
+  }
+  
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: $color; 
+}
+
+	@media (max-width: 992px) {
+		.hover{
+		  &:before,
+		  &:after {
+			display: none; 
+		  }
+		  &:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 2px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			background-color: $color; 
+			transition: all ease 0.3s;
+			opacity: 0; 
+		  }
+		  &:hover:before {
+			opacity: 1; 
+		  }
+
+		  
+		}
+		
+		.navbar-nav{
+			width: max-content;
+		}
+
+		
+	
+		.navbar .navbar-nav .nav-item .nav-link.active::before,
+		.navbar .navbar-nav .nav-item .nav-link.active::after {
+		  content: ''; 
+		  height: 2px;
+		  width: 100%;
+		  position: absolute;
+		  background-color: $color;
+		  transition: all ease 0.3s;
+		  opacity: 1;
+		}
+	  
+		
+
+		
+	}
+	

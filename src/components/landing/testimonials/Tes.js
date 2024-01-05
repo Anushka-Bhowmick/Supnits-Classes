@@ -14,7 +14,7 @@ class Tes extends Component {
             <img
               className="pic rounded-circle shadow-lg"
               alt="testimonials"
-              src={item.img.default}
+              src={item.img}
             />
           </div>
           <div className="user-primary text-center mb-4">

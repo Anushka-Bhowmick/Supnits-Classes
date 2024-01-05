@@ -10,7 +10,7 @@ class Section2 extends Component {
           <div className="card mx-auto shadow-lg mb-5" key={index}>
             <img
               className="img-fluid mb-3"
-              src={item.default}
+              src={item}
               alt={`blog number ${index}`}
             />
             <div className="card-body p-4">

@@ -4,6 +4,7 @@ let teachers = [
 		name: 'amanda perreira',
 		material: 'web development',
 		img: require('../../../images/teachers/1.jpg'),
+	
 	},
 	{
 		name: 'jessica braston',
