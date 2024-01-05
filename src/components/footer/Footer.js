@@ -13,7 +13,7 @@ class Footer extends Component
 		let items = navbar_items.map(item =>
 		{
 			return (
-				<Link className="d-block mb-1 text-muted text-capitalize" to = {`/${item.name === '' ? '': item.name}`} key = {Math.random()}>{item.name === "" ? "home": item.name}</Link>
+				<Link className="implink d-block mb-1 text-muted text-capitalize" to = {`/${item.name === '' ? '': item.name}`} key = {Math.random()}>{item.name === "" ? "home": item.name}</Link>
 			)
 		})
 		return items
@@ -39,7 +39,7 @@ class Footer extends Component
 		let items = elements.map((item, index) =>
 		{
 			return (
-				<a className = 'd-block mb-1 text-muted text-capitalize' href = {`#${item}`} key = {index}>{item === "" ? "Hero": item}</a>
+				<a className = 'implink d-block mb-1 text-muted text-capitalize' href = {`#${item}`} key = {index}>{item === "" ? "Hero": item}</a>
 			)
 		})
 		return items
