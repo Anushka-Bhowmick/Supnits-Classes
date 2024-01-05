@@ -36,14 +36,15 @@
     font-weight: bolder; }
   .footer .container .row .c .s .links a {
     text-decoration: none; }
-  .footer .container .row .c .s .links .implink:hover {
-    color: rgb(117, 241, 241);
-    text-decoration: underline; }
   .footer .container .copyrights p {
     font-weight: bolder;
     font-size: 15px; }
     .footer .container .copyrights p a {
       color: #008080;
       text-decoration: none; }
+.links a:hover, a:hover{
+  color: #008080!important;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=Footer.css.map */
