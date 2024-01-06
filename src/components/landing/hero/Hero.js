@@ -71,7 +71,6 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
 
           <div className="c col-lg-6 col-12">
             <div className="right-side text-lg-end text-center">
