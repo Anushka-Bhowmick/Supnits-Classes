@@ -1,17 +1,26 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import "./Sub.css";
 import sub_img from "../../../images/sub/sub.svg";
+import Shery from "sheryjs";
+import { Helmet } from "react-helmet";
 
-class Sub extends Component {
-  render() {
-    return (
-      <div className="sub py-5 mb-5">
-        <div className="container">
-          <div className="row align-items-center">
-            <div className="c col-lg-6 col-12">
-              <div className="left-side text-lg-start text-center mb-lg-0 mb-5">
-                <img className="img-fluid w-75" src={sub_img} alt="sub" />
-              </div>
+const Sub = () => {
+  useEffect(() => {
+    Shery.makeMagnet("#imgs", {
+      debug: true,
+      ease: "cubic-bezier(0.23, 2, 0.320, 1)",
+      duration: 1,
+    });
+  }, []);
+
+  return (
+    <div className="sub py-5 mb-5">
+      
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="c col-lg-6 col-12">
+            <div className="left-side text-lg-start text-center mb-lg-0 mb-5">
+              <img id="imgs" className="img-fluid w-75" src={sub_img} alt="sub" />
             </div>
             <div className="c col-lg-6 col-12">
               <div className="right-side text-lg-start text-center">
@@ -42,13 +51,18 @@ class Sub extends Component {
                     </button>
                   </div>
                 </div>
+                <div className="col-lg-4 col-12">
+                  <button className="btn btn-primary shadow-lg w-100">
+                    Register
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Sub;
