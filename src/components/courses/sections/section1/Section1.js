@@ -11,7 +11,7 @@ class Section1 extends Component {
           <p className="title">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit
           </p>
-          <button className="btn btn-outline-primary btn-sm text-capitalize">
+          <button className="btn btn-outline-primary btn-sm text-capitalize myedit-readmore-courses">
             read more <i className="ms-2 fas fa-chevron-right"></i>
           </button>
         </div>

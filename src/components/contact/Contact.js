@@ -67,7 +67,7 @@ class Contact extends Component {
                       rows="4"
                     ></textarea>
                   </div>
-                  <button className="btn btn-outline-primary text-capitalize w-25 mx-auto">
+                  <button className="btn btn-outline-primary text-capitalize w-25 mx-auto myedit-sendbtn">
                     send
                   </button>
                 </div>

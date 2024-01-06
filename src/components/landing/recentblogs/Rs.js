@@ -22,7 +22,7 @@ class Rs extends Component {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua...
               </p>
               <div className="_footer d-flex flex-wrap justify-content-between align-items-center">
-                <button className="btn btn-primary text-capitalize mb-3 btn-sm">
+                <button className="btn btn-primary text-capitalize mb-3 btn-sm myedit-readmorebtn-recentblogs">
                   read more <i className="fas fa-chevron-right ms-2"></i>
                 </button>
                 <p className="date text-muted ">November 08, 2023</p>

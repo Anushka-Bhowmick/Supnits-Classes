@@ -37,7 +37,7 @@ class Sub extends Component {
                     </div>
                   </div>
                   <div className="col-lg-4 col-12">
-                    <button className="btn btn-primary shadow-lg w-100">
+                    <button className="btn btn-primary shadow-lg w-100 myedit-register-btn">
                       Register
                     </button>
                   </div>

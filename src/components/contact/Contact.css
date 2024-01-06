@@ -19,3 +19,15 @@
 label {
   font-weight: 600;
 }/*# sourceMappingURL=Contact.css.map */
+
+.myedit-sendbtn{
+  background-color: #008080;
+  border:none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.myedit-sendbtn:hover{
+  background-color: white;
+  color: #008080;
+}
