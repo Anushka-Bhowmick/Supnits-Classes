@@ -31,3 +31,15 @@
 .s1 .container .d .b p {
   font-weight: bolder;
 }/*# sourceMappingURL=Section1.css.map */
+
+.myedit-readmore-courses{
+  background-color: #008080;
+  border:none;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.myedit-readmore-courses:hover{
+  background-color: white;
+  color: #008080;
+}

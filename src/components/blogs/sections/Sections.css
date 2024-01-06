@@ -26,3 +26,14 @@
   font-weight: 800;
   font-size: 20px;
 }/*# sourceMappingURL=Sections.css.map */
+
+.myedit-readmore-blogs{
+  background-color: #008080;
+  border:none;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.myedit-readmore-blogs:hover{
+  background-color: #ffffff;
+  color: #008080;
+}

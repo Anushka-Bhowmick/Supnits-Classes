@@ -55,20 +55,20 @@ const Hero = () => {
                 we redefine learning as a family. Our unparalleled courses
                 cater to all ICSE and CBSE students, JEE and NEET aspirants
               </p>
-
-              <div className="buttons">
-                <Link
-                  className="btn btn-primary text-capitalize me-3 shadow"
-                  to="/about"
-                >
-                  read more<i className="ms-2 fas fa-chevron-right"></i>
-                </Link>
-                <Link
-                  className="btn btn-outline-primary text-capitalize shadow"
-                  to="/contact"
-                >
-                  get in touch<i className="ms-2 fas fa-envelope"></i>
-                </Link>
+                <div className="buttons">
+                  <Link
+                    className="btn btn-primary text-capitalize me-3 shadow myedit-readmore"
+                    to="/about"
+                  >
+                    read more<i className="ms-2 fas fa-chevron-right"></i>
+                  </Link>
+                  <Link
+                    className="btn btn-outline-primary text-capitalize shadow myedit-getintouch"
+                    to="/contact"
+                  >
+                    get in touch<i className="ms-2 fas fa-envelope"></i>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

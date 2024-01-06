@@ -24,3 +24,14 @@
 .sub .container .row .c .right-side .text {
   font-size: 17px;
 }/*# sourceMappingURL=Sub.css.map */
+
+.myedit-register-btn{
+  background-color: #008080;
+  border:none;
+  padding: 5%;
+  transition: all 0.2s ease-in-out;
+}
+.myedit-register-btn:hover{
+  background-color: white;
+  color: #008080;
+}
