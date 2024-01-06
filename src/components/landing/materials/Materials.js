@@ -1,9 +1,9 @@
-import React, { useState, useEffect,useRef } from 'react';
+import React, { useState, useEffect} from 'react';
 import './Materials.css';
 import { categories } from './Data';
 import {motion, useAnimation} from 'framer-motion';
 import { useInView } from "react-intersection-observer";
-import Shery, { mouseFollower } from "sheryjs";
+import Shery from "sheryjs";
 import {Helmet} from "react-helmet";
 
 
