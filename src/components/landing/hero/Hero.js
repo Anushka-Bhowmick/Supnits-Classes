@@ -27,13 +27,13 @@ class Hero extends Component {
 
                 <div className="buttons">
                   <Link
-                    className="btn btn-primary text-capitalize me-3 shadow"
+                    className="btn btn-primary text-capitalize me-3 shadow myedit-readmore"
                     to="/about"
                   >
                     read more<i className="ms-2 fas fa-chevron-right"></i>
                   </Link>
                   <Link
-                    className="btn btn-outline-primary text-capitalize shadow"
+                    className="btn btn-outline-primary text-capitalize shadow myedit-getintouch"
                     to="/contact"
                   >
                     get in touch<i className="ms-2 fas fa-envelope"></i>

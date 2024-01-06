@@ -24,7 +24,7 @@ class Section2 extends Component {
                 nisi ut aliquip ex ea commodo consequat...
               </p>
               <div className="_footer d-flex flex-wrap justify-content-between align-items-center">
-                <button className="btn btn-primary text-capitalize mb-3">
+                <button className="btn btn-primary text-capitalize mb-3 myedit-readmore-blogs">
                   read more <i className="fas fa-chevron-right ms-2"></i>
                 </button>
                 <p className="date text-muted ">November 30, 2021</p>

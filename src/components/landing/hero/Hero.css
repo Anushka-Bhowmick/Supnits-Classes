@@ -29,3 +29,22 @@
 .hero .container .row .c .left-side .desc {
   font-size: 17px;
 }/*# sourceMappingURL=Hero.css.map */
+
+.myedit-readmore{
+  background-color: #008080;
+  border:none;
+  transition: all 0.2s ease-in-out;
+}
+.myedit-readmore:hover{
+  background-color: white;
+}
+
+.myedit-getintouch{
+  background-color: #008080;
+  color: white;
+  border:none;
+  transition: all 0.2s ease-in-out;
+}
+.myedit-getintouch:hover{
+  background-color: white;
+}
