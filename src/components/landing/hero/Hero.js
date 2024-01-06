@@ -12,11 +12,10 @@ const Hero = () => {
   const app=useRef(null);
   useGSAP(()=>{
     gsap.from(".word",{
-      duration:1,
-      delay:.5,
+      duration:.3,
+      delay:.2,
       y:10,
-      stagger:0.2,
-    })
+      stagger:0.2    })
   },{scope:app})
 
   useEffect(()=>{
@@ -45,7 +44,7 @@ const Hero = () => {
             <div className="left-side mb-lg-0 mb-5 text-lg-start text-center" >
               <h3 className="title text-capitalize" style={{display:"flex"}}>
                 welcome to &nbsp;{`Supnits Classes`.split('').map((word, idx) => {
-                  return word === ' ' ? <div key={idx} className="word">&nbsp;</div> : <div style={{color:"green"}} key={idx} className="word">{word}</div>
+                  return word === ' ' ? <div key={idx} className="word">&nbsp;</div> : <div style={{color:"#008080"}} key={idx} className="word">{word}</div>
                 })}
               </h3>
               <p className="sub-title text-muted text-capitalize">
