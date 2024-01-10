@@ -19,6 +19,9 @@
 .hero .container .row .c .left-side .title {
   font-size: 30px;
   font-weight: bolder;
+  /* word-break: break-all; */
+  /* word-wrap: break-word; */
+
 }
 .hero .container .row .c .left-side .title span {
   color: #008080;

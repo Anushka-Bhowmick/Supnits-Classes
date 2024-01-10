@@ -5,13 +5,18 @@ html {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: black;
+  max-width: 100vw;
 }
+
 body:before {
   content: "";
   display: block;
   height: 100px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

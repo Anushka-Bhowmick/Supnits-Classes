@@ -9,23 +9,24 @@ import { Helmet } from "react-helmet";
 
 
 const Hero = () => {
-  const app=useRef(null);
-  useGSAP(()=>{
-    gsap.from(".word",{
-      duration:.3,
-      delay:.2,
-      y:10,
-      stagger:0.2    })
-  },{scope:app})
+  const app = useRef(null);
+  useGSAP(() => {
+    gsap.from(".word", {
+      duration: .3,
+      delay: .2,
+      y: 10,
+      stagger: 0.2
+    })
+  }, { scope: app })
 
-  useEffect(()=>{
+  useEffect(() => {
     Shery.makeMagnet("#img" /* Element to target.*/, {
       //Parameters are optional.
       ease: "cubic-bezier(0.23, 1, 0.320, 1)",
       duration: 1,
     });
   })
-  
+
   return (
     <div ref={app} className="hero py-5 mb-5">
       <Helmet>
@@ -42,10 +43,19 @@ const Hero = () => {
         <div className="row align-items-center">
           <div className="c col-lg-6 col-12">
             <div className="left-side mb-lg-0 mb-5 text-lg-start text-center" >
-              <h3 className="title text-capitalize" style={{display:"flex"}}>
-                welcome to &nbsp;{`Supnits Classes`.split('').map((word, idx) => {
-                  return word === ' ' ? <div key={idx} className="word">&nbsp;</div> : <div style={{color:"#008080"}} key={idx} className="word">{word}</div>
-                })}
+              <h3 className="title text-capitalize" style={{
+                "display": "flex",
+                "flex-direction": "row",
+                "flex-wrap": "wrap",
+                "justify-content": "center",
+              }}>
+                welcome to &nbsp; <div style={{
+                "display": "flex",
+                "flex-direction": "row",
+                "justify-content": "center",
+              }}> {`Supnits Classes`.split('').map((word, idx) => {
+                  return word === ' ' ? <div key={idx} className="word">&nbsp;</div> : <div style={{ color: "#008080" }} key={idx} className="word">{word}</div>
+                })}</div>
               </h3>
               <p className="sub-title text-muted text-capitalize">
                 we always would be nascent
@@ -55,22 +65,22 @@ const Hero = () => {
                 we redefine learning as a family. Our unparalleled courses
                 cater to all ICSE and CBSE students, JEE and NEET aspirants
               </p>
-                <div className="buttons">
-                  <Link
-                    className="btn btn-primary text-capitalize me-3 shadow myedit-readmore"
-                    to="/about"
-                  >
-                    read more<i className="ms-2 fas fa-chevron-right"></i>
-                  </Link>
-                  <Link
-                    className="btn btn-outline-primary text-capitalize shadow myedit-getintouch"
-                    to="/contact"
-                  >
-                    get in touch<i className="ms-2 fas fa-envelope"></i>
-                  </Link>
-                </div>
+              <div className="buttons">
+                <Link
+                  className="btn btn-primary text-capitalize me-3 shadow myedit-readmore"
+                  to="/about"
+                >
+                  read more<i className="ms-2 fas fa-chevron-right"></i>
+                </Link>
+                <Link
+                  className="btn btn-outline-primary text-capitalize shadow myedit-getintouch"
+                  to="/contact"
+                >
+                  get in touch<i className="ms-2 fas fa-envelope"></i>
+                </Link>
               </div>
             </div>
+          </div>
 
           <div className="c col-lg-6 col-12">
             <div className="right-side text-lg-end text-center">
