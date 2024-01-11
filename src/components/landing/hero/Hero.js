@@ -57,7 +57,7 @@ const Hero = () => {
                   return word === ' ' ? <div key={idx} className="word">&nbsp;</div> : <div style={{ color: "#008080" }} key={idx} className="word">{word}</div>
                 })}</div>
               </h3>
-              <p className="sub-title text-muted text-capitalize">
+              <p className="sub-title text-muted text-center text-capitalize">
                 we always would be nascent
               </p>
               <p className="desc pb-3">
