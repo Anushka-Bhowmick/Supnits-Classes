@@ -1,10 +1,34 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
 import contact from "../../images/sections/contact.svg";
 import "./Contact.css";
-
+import emailjs from 'emailjs-com';
+//template_jhemkuw--template id
+//service_1sv9t6b-- service id
+//ODSTkHwTRAirRD5Je-- api key
 class Contact extends Component {
+  constructor(props) {
+    super(props);
+    this.form = React.createRef();
+    this.state = {
+      isFormVisible: true
+    };
+  }
+  sendEmail = (e) => {
+    e.preventDefault();
+  
+    emailjs.sendForm('service_1sv9t6b', 'template_jhemkuw', this.form.current, 'ODSTkHwTRAirRD5Je')
+      .then((result) => {
+          console.log(result.text);
+          window.alert('Email sent successfully!');
+      }, (error) => {
+          console.log(error.text);
+          window.alert('Failed to send email. Please try again.');
+      });
+  };
   render() {
-    return (
+    
+    return this.state.isFormVisible ?(
+      <form ref={this.form} onSubmit={this.sendEmail}>
       <div className="getintouch mb-5">
         <div className="container">
           <div className="title pt-1 pb-4 text-center">
@@ -12,21 +36,24 @@ class Contact extends Component {
               contact <span>us</span>
             </h4>
           </div>
+          
           <div className="row align-items-center">
             <div className="c col-lg-6 col-12 mb-lg-0 mb-5">
               <div className="left-side text-lg-start text-center">
                 <img className="img-fluid w-75" src={contact} alt="contact" />
               </div>
             </div>
+           
             <div className="c col-lg-6 col-12">
               <div className="right-side">
                 <div className="row">
                   <div className="form-group c col-md-6 col-12 mb-3">
                     <label htmlFor="last_name" className="mb-2 text-capitalize">
-                      first name
+                     
                     </label>
                     <input
                       type="text"
+                      name="user_name"
                       className="form-control py-2 px-3"
                       id="first_name"
                       placeholder="First Name"
@@ -50,6 +77,7 @@ class Contact extends Component {
                       Email
                     </label>
                     <input
+                      name="user_email"
                       type="email"
                       className="form-control py-2 px-3"
                       id="e-mail"
@@ -65,18 +93,22 @@ class Contact extends Component {
                       className="form-control py-2 px-3"
                       id="textarea"
                       rows="4"
+                      name="message"
                     ></textarea>
                   </div>
-                  <button className="btn btn-outline-primary text-capitalize w-25 mx-auto myedit-sendbtn">
-                    send
-                  </button>
+                 
+                        <input className="btn btn-outline-primary text-capitalize w-25 mx-auto myedit-sendbtn" type="submit" value="Send" />
+                 
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
       </div>
-    );
+       </form>
+    ): null;
+    
   }
 }
 
