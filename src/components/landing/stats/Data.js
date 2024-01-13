@@ -10,7 +10,7 @@ let stats = [
 	},
 	{
 		name: 'followers',
-		number: '20,000'
+		number: '20000'
 	},
 ]
 
