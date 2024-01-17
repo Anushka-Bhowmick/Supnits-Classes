@@ -37,21 +37,18 @@ Now, you are ready to make your contributions.
 
 ## How to Run this project locally
 
-1. Clone the project (How to clone👉)(https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
-
-
-2. Navigate to the cloned repository in your local system.
+1. Navigate to the cloned repository in your local system.
 
 ```bash
   cd <Project folder name>
 ```
 
-3. Install dependencies
+2. Install dependencies
 
 ```bash
   npm install
 ```
-4. Run the Application
+3. Run the Application
 ``` bash
   npm start
 ```
