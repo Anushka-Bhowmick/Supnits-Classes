@@ -3,7 +3,7 @@
 Welcome to the Supnits-Classes repository! We appreciate your interest in contributing to our educational institute's website. Whether you're a developer, designer, or content creator, your contributions are valuable in enhancing the overall quality of our platform.
 
 <p align="center">
-  <img src="https://github.com/Anushka-Bhowmick/Supnits-Classes/assets/121785700/11214b55-7828-44bf-8fe4-f2a714aab095" alt="Supnits-Classes Image">
+  <img src="https://github.com/Anushka-Bhowmick/Supnits-Classes/assets/121785700/11214b55-7828-44bf-8fe4-f2a714aab095" alt="Supnits-Classes Image" width="30%" >
 </p>
 
 ## Table of Contents
@@ -51,38 +51,10 @@ Now, you are ready to make your contributions.
 ```bash
   npm install
 ```
-
-4. Connect your mongoDb Database.
-
-    i) Navigate to the server folder
-   ii) Replace the part 'Your MongoDB instance' part with your MongoDB instance.
-       For reference👉 https://www.section.io/engineering-education/nodejs-mongoosejs-mongodb/
-
-
-5. Get your google client_id. 
-   For reference👉 https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid
-
-6. Navigate to the file index.ejs in client/template/views/
-
-7. Replace 'YOUR GOOGLE CLIENT_ID' in 8th line
-   with yoour google client_Id.
-
-
-8. Start the server
-Navigate to the server folder.
+4. Run the Application
+``` bash
+  npm start
 ```
-    cd ../../../server
-```
-9. Start nodemon.
-```bash
-  nodemon app.js
-```
-10. Open anhy browser :
-    in address bar type -> localhost:3000/home 
-    and hit enter!
-
-Congratulations you have done it!! 🎉
-
 
 ## Contribution Workflow
 
@@ -149,3 +121,6 @@ Follow these points during your contribution. We appreciate open and respectful 
 
 
 Thank you for contributing to Supnits-Classes! ❤️
+
+<div align="center">
+<img src="https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif" width="50%"></div>
