@@ -120,4 +120,37 @@
     transition: all ease 0.3s;
     opacity: 1;
   }
-}/*# sourceMappingURL=Navbar.css.map */
+}
+
+body.dark-mode .navbar {
+  background-color: #333; 
+  color: #fff; 
+}
+
+body.dark-mode .navbar .container .navbar-brand {
+  color: #fff; 
+}
+
+body.dark-mode .navbar .container .navbar-brand span {
+  color: #008080; 
+}
+
+body.dark-mode .navbar .container .navbar-brand i {
+  color: #008080; 
+}
+
+body.dark-mode .navbar .container .collapse ul li a {
+  color: #fff; 
+}
+
+body.dark-mode .hover:after {
+  background-color: #008080; 
+}
+
+body.dark-mode .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #008080; 
+}
+
+body.dark-mode .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #008080; 
+}
