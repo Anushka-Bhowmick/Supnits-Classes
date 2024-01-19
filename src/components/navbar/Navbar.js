@@ -2,9 +2,27 @@ import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './Navbar.css';
 import { navbar_items } from './Data';
+import AuthService from './AuthService'; 
 
 class Navbar extends Component {
-    state = { s: false };
+    state = { s: false, isAuthenticated: false };
+
+    componentDidMount() {
+        window.addEventListener('scroll', () => {
+            this.addShadow();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            this.addShadow();
+        });
+        const isAuthenticated = AuthService.isAuthenticated();
+        this.setState({ isAuthenticated });
+    }
+
+    handleLogout = () => {
+        AuthService.logout();
+        this.setState({ isAuthenticated: false });
+    };
 
     displayNavbarItems = () => {
         let items = navbar_items.map((item) => (
@@ -15,22 +33,30 @@ class Navbar extends Component {
                 </NavLink>
             </li>
         ));
+        if (this.state.isAuthenticated) {
+            items.push(
+                <li className="nav-item me-lg-3 my-lg-0 my-2" key="logout">
+                    <button className="nav-link btn btn-link text-capitalize position-relative hover" onClick={this.handleLogout}>
+                        Logout
+                    </button>
+                </li>
+            );
+        } else {
+            items.push(
+                <li className="nav-item me-lg-3 my-lg-0 my-2" key="login">
+                    <NavLink className="nav-link text-capitalize position-relative hover" to="/login">
+                        Login
+                    </NavLink>
+                </li>
+            );
+        }
+
         return items;
     };
 
     addShadow = () => {
         window.scrollY >= 80 ? this.setState({ s: true }) : this.setState({ s: false });
     };
-
-    componentDidMount() {
-        window.addEventListener('scroll', () => {
-            this.addShadow();
-        });
-
-        document.addEventListener('DOMContentLoaded', () => {
-            this.addShadow();
-        });
-    }
 
     render() {
         return (
