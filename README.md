@@ -1,5 +1,24 @@
 # Supnits-Classes Contribution Guidelines
 
+<div align="center">
+ <p>
+
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=Anushka-Bhowmick%2FSupnits-Classes%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/Anushka-Bhowmick/Supnits-Classes)
+![GitHub Repo stars](https://img.shields.io/github/stars/Anushka-Bhowmick/Supnits-Classes)
+![GitHub contributors](https://img.shields.io/github/contributors/Anushka-Bhowmick/Supnits-Classes)
+![GitHub last commit](https://img.shields.io/github/last-commit/Anushka-Bhowmick/Supnits-Classes)
+![GitHub repo size](https://img.shields.io/github/repo-size/Anushka-Bhowmick/Supnits-Classes)
+![Github](https://img.shields.io/github/license/Anushka-Bhowmick/Supnits-Classes)
+![GitHub issues](https://img.shields.io/github/issues/Anushka-Bhowmick/Supnits-Classes)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/Anushka-Bhowmick/Supnits-Classes)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Anushka-Bhowmick/Supnits-Classes)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Anushka-Bhowmick/Supnits-Classes)
+
+ </p>
+
 Welcome to the Supnits-Classes repository! We appreciate your interest in contributing to our educational institute's website. Whether you're a developer, designer, or content creator, your contributions are valuable in enhancing the overall quality of our platform.
 
 <p align="center">
