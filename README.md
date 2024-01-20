@@ -18,7 +18,7 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/Anushka-Bhowmick/Supnits-Classes)
 
  </p>
-
+</div>
 Welcome to the Supnits-Classes repository! We appreciate your interest in contributing to our educational institute's website. Whether you're a developer, designer, or content creator, your contributions are valuable in enhancing the overall quality of our platform.
 
 <p align="center">
