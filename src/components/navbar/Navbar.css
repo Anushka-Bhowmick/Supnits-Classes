@@ -181,3 +181,7 @@ body.dark-mode .form-check-label {
 .form-check-input {
   cursor: pointer;
 }
+
+.collapse {
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
