@@ -176,3 +176,8 @@ body.dark-mode .navbar .navbar-nav .nav-item .nav-link.active {
 body.dark-mode .form-check-label {
   color: #fff;
 }
+
+/* Add cursor pointer for light/dark mode toggle button */
+.form-check-input {
+  cursor: pointer;
+}
