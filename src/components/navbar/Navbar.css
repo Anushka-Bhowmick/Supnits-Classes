@@ -8,7 +8,6 @@
     opacity: 0.3;
   }
 }
-
 @keyframes coloring {
   0%, 100% {
     color: #008080;
@@ -17,37 +16,29 @@
     color: grey;
   }
 }
-
 .navbar {
   background-color: white;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: ease 0.3s;
 }
-
 .navbar .container .navbar-brand {
   font-weight: bolder;
   letter-spacing: 2px;
   font-size: 20px;
   color: black;
-  transition: color 0.3s ease;
 }
-
 .navbar .container .navbar-brand span {
   color: #008080;
-  transition: color 0.3s ease;
 }
-
 .navbar .container .navbar-brand i {
-  transition: transform 0.5s, color 0.3s ease;
+  transition: 0.5s;
 }
-
 .navbar .container .navbar-brand:hover i {
   transform: rotate(360deg);
 }
-
 .navbar .container .collapse ul li a {
   color: black;
   font-weight: bolder;
-  transition: color 0.3s ease;
+  transition: 0.3s;
 }
 
 .hover:after {
@@ -63,20 +54,16 @@
 .hover:before, .hover:after {
   opacity: 0;
 }
-
 .hover:before {
   top: -10%;
 }
-
 .hover:after {
   bottom: -30%;
 }
-
 .hover:hover:before {
   top: 0;
   opacity: 1;
 }
-
 .hover:hover:after {
   bottom: 0;
   opacity: 1;
@@ -85,11 +72,9 @@
 .active:before, .active:after {
   opacity: 1;
 }
-
 .active:before {
   top: 0;
 }
-
 .active:after {
   bottom: 0;
 }
@@ -106,7 +91,6 @@
   .hover:before, .hover:after {
     display: none;
   }
-
   .hover:after {
     content: "";
     display: block;
@@ -119,15 +103,13 @@
     transition: all ease 0.3s;
     opacity: 0;
   }
-
   .hover:hover:before {
     opacity: 1;
   }
-
   .navbar-nav {
+    width: -moz-max-content;
     width: max-content;
   }
-
   .navbar .navbar-nav .nav-item .nav-link.active::before,
   .navbar .navbar-nav .nav-item .nav-link.active::after {
     content: "";
@@ -141,43 +123,34 @@
 }
 
 body.dark-mode .navbar {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; 
+  color: #fff; 
 }
 
 body.dark-mode .navbar .container .navbar-brand {
-  color: #fff;
+  color: #fff; 
 }
 
 body.dark-mode .navbar .container .navbar-brand span {
-  color: #008080;
+  color: #008080; 
 }
 
 body.dark-mode .navbar .container .navbar-brand i {
-  color: #008080;
+  color: #008080; 
 }
 
 body.dark-mode .navbar .container .collapse ul li a {
-  color: #fff;
+  color: #fff; 
 }
 
 body.dark-mode .hover:after {
-  background-color: #008080;
+  background-color: #008080; 
 }
 
 body.dark-mode .navbar .navbar-nav .nav-item .nav-link:hover {
-  color: #008080;
+  color: #008080; 
 }
 
 body.dark-mode .navbar .navbar-nav .nav-item .nav-link.active {
-  color: #008080;
-}
-
-body.dark-mode .form-check-label {
-  color: #fff;
-}
-
-/* Add cursor pointer for light/dark mode toggle button */
-.form-check-input {
-  cursor: pointer;
+  color: #008080; 
 }
