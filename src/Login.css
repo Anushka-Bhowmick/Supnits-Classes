@@ -1,16 +1,17 @@
-/* Common Styles */
-.login-form {
-  width: 320px;
-  padding: 30px;
-  padding-top: 156px;
-  transition: transform 0.3s ease-in-out; 
-}
+/* Login.css */
 
 .center-container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+.login-form {
+  width: 320px;
+  padding: 30px;
+  padding-top: 156px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .login-field {
@@ -33,6 +34,10 @@
   font-weight: 700;
   width: 75%;
   transition: 0.2s;
+}
+
+.login-input::placeholder {
+  color: #a0a0a0; /* Light mode placeholder color */
 }
 
 .login-input:active,
@@ -74,32 +79,52 @@
 }
 
 /* Light Mode Styles */
-.center-container.bg-primary {
-  background-color: #007bff;
-}
-
-.center-container.text-dark {
+.light-mode .center-container {
+  background-color: #f8f9fa;
   color: #343a40;
 }
 
-.login-form.bg-light {
-  background-color: #f8f9fa;
+.light-mode .login-form {
+  background-color: #ffffff;
 }
 
 /* Dark Mode Styles */
-.center-container.bg-dark {
-  background-color: #343a40;
-}
-
-.center-container.text-white {
+.dark-mode .center-container {
+  background-color: black;
   color: #ffffff;
 }
 
-.login-form.bg-secondary {
+.dark-mode .login-form {
   background-color: #6c757d;
 }
 
-.login-submit.dark-mode {
-  background-color: #2a2a47;
-  color: #fff;
+.dark-mode .login-input {
+  color: #ffffff;
+  border-bottom-color: #cccccc; /* Dark mode underline color */
+}
+
+.dark-mode .login-input:active,
+.dark-mode .login-input:focus,
+.dark-mode .login-input:hover {
+  border-bottom-color: #ffffff; /* Change underline color on hover/focus/active in dark mode */
+}
+
+.dark-mode .login-input::placeholder {
+  color: #cccccc; /* Dark mode placeholder color */
+}
+
+.dark-mode .login-submit {
+  background: #444;
+  color: #ffffff;
+}
+
+.dark-mode .button-icon {
+  font-size: 24px;
+  margin-left: auto;
+  color: white;
+}
+
+/* Change icon colors in dark mode */
+.dark-mode .login-icon {
+  color: #ffffff;
 }
