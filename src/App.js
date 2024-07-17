@@ -1,41 +1,49 @@
-import React, { Component } from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/navbar/Navbar';
-import Footer from './components/footer/Footer';
-import Landing from './components/landing/Landing';
-import About from './components/about/About';
-import Blogs from './components/blogs/Blogs';
-import Sb from './components/scrollbtn/Sb';
-import Courses from './components/courses/Courses';
-import Contact from './components/contact/Contact';
-import Notfound from './components/notfound/Notfound';
-import Login from './Login';
-import SignUp from './SignUp';
+import React, { Component } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import Landing from "./components/landing/Landing";
+import About from "./components/about/About";
+import Blogs from "./components/blogs/Blogs";
+import Sb from "./components/scrollbtn/Sb";
+import Courses from "./components/courses/Courses";
+import Contact from "./components/contact/Contact";
+import Notfound from "./components/notfound/Notfound";
+import Login from "./Login";
+import SignUp from "./SignUp";
 
 class App extends Component {
+  state = { darkMode: false };
+
+  toggleDarkMode = () => {
+    this.setState((prevState) => ({ darkMode: !prevState.darkMode }));
+  };
+
   render() {
+    const { darkMode } = this.state;
+
     return (
       <BrowserRouter>
         <>
           <Sb />
-          <div className='_navbar'>
-            <Navbar />
+          <div className="_navbar">
+            <Navbar darkMode={darkMode} toggleDarkMode={this.toggleDarkMode} />
           </div>
 
-          <div className='_body'>
+          <div className={`_body ${darkMode ? "dark-mode" : "light-mode"}`}>
             <Routes>
-              <Route path='/' element={<Landing />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/blogs/*' element={<Blogs />} />
-              <Route path='/courses/*' element={<Courses />} />
-              <Route path='/contact' element={<Contact />} />
-              <Route path='/login' element={<Login />} />
-              <Route path='/signup' element={<SignUp />} />
-              <Route path='*' element={<Notfound />} />
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/blogs/*" element={<Blogs />} />
+              <Route path="/courses/*" element={<Courses />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/login" element={<Login darkMode={darkMode} />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="*" element={<Notfound />} />
             </Routes>
           </div>
 
-          <div className='_footer'>
+          <div className="_footer">
             <Footer />
           </div>
         </>

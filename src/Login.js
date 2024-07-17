@@ -1,28 +1,30 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FiUser, FiLock } from 'react-icons/fi'; 
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import './Login.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FiUser, FiLock } from "react-icons/fi";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Login.css";
 
-const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+const Login = ({ darkMode }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    if (username === 'your_username' && password === 'your_password') {
-      alert('Login successful!');
+    if (username === "your_username" && password === "your_password") {
+      alert("Login successful!");
     } else {
-      alert('Invalid username or password. Please try again.');
+      alert("Invalid username or password. Please try again.");
     }
   };
 
-  const handleToggleSignUp = () => {
-    document.getElementById('login-form').style.transform = 'translateX(-100%)';
-  };
-
   return (
-    <div className="center-container bg-primary text-white">
-      <div id="login-form" className="login-form bg-light p-4 rounded">
+    <div
+      className={`center-container ${darkMode ? "dark-mode" : "light-mode"}`}
+    >
+      <div
+        className={`login-form ${
+          darkMode ? "dark-mode" : "light-mode"
+        } p-4 rounded`}
+      >
         <div className="login-field">
           <label htmlFor="username" className="login-icon">
             <FiUser />
@@ -55,13 +57,13 @@ const Login = () => {
           />
         </div>
 
-        <button type="button" onClick={handleLogin} className="login-submit btn btn-secondary">
+        <button type="button" onClick={handleLogin} className="login-submit">
           Login <span className="button-icon">→</span>
         </button>
 
         <div className="signup-link">
           <p>
-            <Link to="/signup" onClick={handleToggleSignUp}>Sign Up</Link>
+            <Link to="/signup">Sign Up</Link>
           </p>
         </div>
       </div>
