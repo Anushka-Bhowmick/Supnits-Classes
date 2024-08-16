@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
@@ -13,31 +13,23 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 
 class App extends Component {
-  state = { darkMode: false };
-
-  toggleDarkMode = () => {
-    this.setState((prevState) => ({ darkMode: !prevState.darkMode }));
-  };
-
   render() {
-    const { darkMode } = this.state;
-
     return (
       <BrowserRouter>
         <>
           <Sb />
           <div className="_navbar">
-            <Navbar darkMode={darkMode} toggleDarkMode={this.toggleDarkMode} />
+            <Navbar />
           </div>
 
-          <div className={`_body ${darkMode ? "dark-mode" : "light-mode"}`}>
+          <div className="_body">
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/about" element={<About />} />
               <Route path="/blogs/*" element={<Blogs />} />
               <Route path="/courses/*" element={<Courses />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/login" element={<Login darkMode={darkMode} />} />
+              <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<SignUp />} />
               <Route path="*" element={<Notfound />} />
             </Routes>

@@ -4,7 +4,7 @@ import { FiUser, FiLock } from "react-icons/fi";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 
-const Login = ({ darkMode }) => {
+const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,15 +16,13 @@ const Login = ({ darkMode }) => {
     }
   };
 
+  const handleToggleSignUp = () => {
+    document.getElementById("login-form").style.transform = "translateX(-100%)";
+  };
+
   return (
-    <div
-      className={`center-container ${darkMode ? "dark-mode" : "light-mode"}`}
-    >
-      <div
-        className={`login-form ${
-          darkMode ? "dark-mode" : "light-mode"
-        } p-4 rounded`}
-      >
+    <div className="center-container bg-primary text-white">
+      <div id="login-form" className="login-form bg-light p-4 rounded">
         <div className="login-field">
           <label htmlFor="username" className="login-icon">
             <FiUser />
@@ -57,13 +55,19 @@ const Login = ({ darkMode }) => {
           />
         </div>
 
-        <button type="button" onClick={handleLogin} className="login-submit">
+        <button
+          type="button"
+          onClick={handleLogin}
+          className="login-submit btn btn-secondary"
+        >
           Login <span className="button-icon">→</span>
         </button>
 
         <div className="signup-link">
           <p>
-            <Link to="/signup">Sign Up</Link>
+            <Link to="/signup" onClick={handleToggleSignUp}>
+              Sign Up
+            </Link>
           </p>
         </div>
       </div>
