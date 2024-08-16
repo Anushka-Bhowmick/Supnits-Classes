@@ -152,5 +152,19 @@ body.dark-mode .navbar .navbar-nav .nav-item .nav-link:hover {
 }
 
 body.dark-mode .navbar .navbar-nav .nav-item .nav-link.active {
-  color: #008080; 
+  color: #008080;
 }
+
+body.dark-mode .form-check-label {
+  color: #fff;
+}
+
+/* Add cursor pointer for light/dark mode toggle button */
+.form-check-input {
+  cursor: pointer;
+}
+
+.collapse {
+  transition: height 0.5s ease, opacity 0.5s ease;
+}
+
